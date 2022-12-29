@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/projects.css";
-import sneakerzone from "./images/sneakerzone-preview.png";
+import sneakerzone from "./images/sneakerzone-image.png";
 
 const projects = () => {
   return (
@@ -16,7 +16,7 @@ const projects = () => {
           <article class="single-project">
             <div class="project-container">
               <img src={sneakerzone} alt="single project" />
-              {/*<a href="https://www.johnsmilga.com" class="project-icon">
+              {/*<a href="" class="project-icon">
                 <i class="fas fa-home"></i>
   </a>*/}
             </div>

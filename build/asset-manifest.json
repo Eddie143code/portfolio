@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9ab836e2.css",
+    "main.js": "/portfolio/static/js/main.11352f59.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/sneakerzone-image.png": "/portfolio/static/media/sneakerzone-image.5608eac618f8348011d6.png",
+    "static/media/me.JPG": "/portfolio/static/media/me.ee084206cdee0c70b32f.JPG",
+    "index.html": "/portfolio/index.html",
+    "main.9ab836e2.css.map": "/portfolio/static/css/main.9ab836e2.css.map",
+    "main.11352f59.js.map": "/portfolio/static/js/main.11352f59.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ab836e2.css",
+    "static/js/main.11352f59.js"
+  ]
+}

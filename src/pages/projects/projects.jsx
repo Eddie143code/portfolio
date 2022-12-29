@@ -31,9 +31,7 @@ const projects = () => {
                 <span>
                   <i class="fab fa-github"></i>
                 </span>
-                <a href="https://sneaker-zone-riq1x6zz0-placenamehere1901-gmailcom.vercel.app/">
-                  visit site
-                </a>
+                <a href="https://sneaker-zone.vercel.app/">visit site</a>
               </div>
             </div>
           </article>

@@ -10,8 +10,8 @@ const contact = () => {
 
       <div class="section-center page-info">
         <p>
-          If you are looking to get ahold of me, you can send me an email:
-          @ettienejoubertleroux@gmail.com
+          If you are looking to contact me, you can send me an email:
+          ettienejoubertleroux@gmail.com
         </p>
         {/*<p>
           You can also reach me on mobile at

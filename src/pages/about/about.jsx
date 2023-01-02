@@ -12,11 +12,13 @@ const about = () => {
       <div className="section-center page-info">
         <p>
           Hi, I'm Ettiene and I am a web developer. I know HTML/CSS and
-          javascript. The technologies I have used are:
+          JavaScript. The technologies I have used are:
           <ul>
             <li>HTML</li>
             <li>CSS - vanilla, SASS, MUI and Tailwind.</li>
-            <li>Javascript - React, Node with Express.js, and Next.js.</li>
+            <li>
+              JavaScript/TypeScript - React, Node with Express.js, and Next.js.
+            </li>
             <li>Databases: MongoDB, ElephantSQL, and Supabase.</li>
           </ul>
         </p>

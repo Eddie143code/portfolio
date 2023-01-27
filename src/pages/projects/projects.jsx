@@ -26,7 +26,8 @@ const projects = () => {
               <h4>SneakerZone</h4>
               <p class="project-paragraph">
                 An e-commerce website that sells shoes. The owner can upload
-                products throught the admin screen. The technologies used are:
+                products throught the admin screen at
+                sneaker-zone.vercel.app/admin. The technologies used are:
                 Next.js, MUI, Supabase and useReducer/useContext. Also
                 elephantsql implemented in a branch with sequelize.
               </p>

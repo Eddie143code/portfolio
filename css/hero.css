@@ -1,0 +1,40 @@
+.hero {
+  background: rgb(218, 218, 255);
+}
+
+.hero-center {
+  margin-top: 5%;
+  min-height: calc(120vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.hero-info {
+  text-align: center;
+}
+
+.hero-icons {
+  margin: 0 auto;
+}
+
+.hero-img {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    display: inline;
+  }
+  .hero-center {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    max-width: 20rem;
+    max-height: 20rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 100%;
+    position: relative;
+  }
+}

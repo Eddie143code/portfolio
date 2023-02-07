@@ -1,0 +1,59 @@
+@import url("./globals.css");
+
+.project-center {
+  background: rgb(255, 123, 244);
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.project-info {
+  margin: auto auto;
+}
+
+.project-info p {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-image {
+  display: block;
+  margin: auto auto;
+}
+
+.project-image-center {
+  height: 100%;
+}
+
+.project-photo {
+  max-width: 20rem;
+  max-height: 20rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .project-info {
+  }
+
+  .project-image {
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-info {
+    width: 70%;
+  }
+
+  .project-image {
+  }
+}

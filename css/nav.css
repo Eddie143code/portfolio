@@ -6,6 +6,7 @@
   align-items: center;
   width: 99vw;
   background: var(--background-color);
+  z-index: 2;
 }
 
 .nav-center {

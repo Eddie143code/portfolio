@@ -1,0 +1,26 @@
+@import url("./globals.css");
+
+.contact-center {
+  margin: 0 auto;
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+}
+
+.contact-info {
+  display: grid;
+  place-items: center;
+  width: 90vw;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-info {
+    width: 70vw;
+  }
+}

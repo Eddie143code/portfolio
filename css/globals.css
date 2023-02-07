@@ -84,16 +84,16 @@ p {
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   h3 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   body {
     font-size: 1rem;
@@ -129,17 +129,17 @@ p {
   max-width: 1170px;
 }
 
-.social-icons {
-  display: grid;
-  margin-top: 3rem;
-  width: 20rem;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
+.social-iconss {
+  display: flex;
+  gap: 1px;
+  min-width: 30%;
+  width: auto;
+  justify-content: space-around;
 }
 
 .social-icon {
   font-size: 1.5rem;
-  color: var(--clr-grey-1);
+  color: black;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }

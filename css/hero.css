@@ -3,14 +3,28 @@
 }
 
 .hero-center {
-  margin-top: 5%;
-  min-height: calc(120vh - 5rem);
+  min-height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
 }
 
 .hero-info {
   text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+
+.hero-info > a {
+  cursor: pointer;
+  width: 20%;
+  box-shadow: var(--dark-shadow);
+  border: 1px solid black;
+}
+
+.hero-info h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .hero-icons {
@@ -22,19 +36,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .hero-img {
-    display: inline;
-  }
-  .hero-center {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-photo {
-    max-width: 20rem;
-    max-height: 20rem;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 100%;
-    position: relative;
+  .hero-info h4 {
+    font-size: 2rem;
   }
 }

@@ -1,0 +1,57 @@
+@import url("./globals.css");
+
+.about-center {
+  background: rgb(211, 211, 211);
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.about-info {
+  margin: auto auto;
+}
+
+.about-info p {
+  width: 90vw;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-image {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+    place-items: unset;
+  }
+
+  .about-info {
+    width: 70%;
+  }
+
+  .about-info p {
+    width: auto;
+  }
+
+  .about-image {
+    display: block;
+    margin: auto auto;
+  }
+
+  .about-image-center {
+    height: 100%;
+  }
+
+  .about-photo {
+    max-width: 20rem;
+    max-height: 20rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: relative;
+  }
+}

@@ -1,7 +1,6 @@
 @import url("./globals.css");
 
 .project-center {
-  background: rgb(255, 123, 244);
   height: 70vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -15,6 +14,8 @@
 .project-info p {
   margin-top: 5%;
   margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-title {
@@ -22,12 +23,15 @@
 }
 
 .project-image {
-  display: block;
-  margin: auto auto;
+  margin: 0 auto;
 }
 
 .project-image-center {
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-photo {
@@ -40,20 +44,29 @@
 
 @media screen and (min-width: 768px) {
   .project-info {
+    width: 80%;
   }
 
-  .project-image {
+  .project-info p {
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .project-center {
+  .project-center div {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .project-info {
     width: 70%;
   }
 
-  .project-image {
+  .project-photo {
+    margin-left: 50%;
+  }
+
+  .project-title h3 {
+    width: 100%;
+    margin-left: 50%;
   }
 }

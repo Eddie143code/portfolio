@@ -1,5 +1,4 @@
 .hero {
-  background: rgb(218, 218, 255);
 }
 
 .hero-center {
@@ -17,7 +16,9 @@
 
 .hero-info > a {
   cursor: pointer;
-  width: 20%;
+  text-transform: uppercase;
+  width: 50%;
+  padding: 1rem;
   box-shadow: var(--dark-shadow);
   border: 1px solid black;
 }
@@ -38,5 +39,9 @@
 @media screen and (min-width: 1024px) {
   .hero-info h4 {
     font-size: 2rem;
+  }
+
+  .hero-info > a {
+    width: 30%;
   }
 }

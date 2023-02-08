@@ -13,9 +13,19 @@
   width: 90vw;
 }
 
+.contact-info p {
+  margin-top: 10%;
+}
+
+.contact-info h2 {
+}
+
 @media screen and (min-width: 768px) {
   .contact-info {
     width: 80vw;
+  }
+  .contact-info p {
+    width: 70%;
   }
 }
 

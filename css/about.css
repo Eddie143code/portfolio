@@ -1,7 +1,6 @@
 @import url("./globals.css");
 
 .about-center {
-  background: rgb(211, 211, 211);
   height: 70vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -14,6 +13,7 @@
 
 .about-info p {
   width: 90vw;
+  margin-top: 10%;
 }
 
 .about-title {
@@ -25,9 +25,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .about-center {
+  .about-center div {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    place-items: unset;
+  }
+
+  .about-title h3 {
+    margin-left: 50%;
+    width: 100%;
   }
 
   .about-info {
@@ -35,7 +40,9 @@
   }
 
   .about-info p {
-    width: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-image {

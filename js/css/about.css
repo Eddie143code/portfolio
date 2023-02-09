@@ -1,0 +1,76 @@
+@import url("./globals.css");
+
+.about-center {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.about-center article {
+}
+
+.about-info {
+  margin: auto auto;
+}
+
+.about-info p {
+  width: 90vw;
+  margin-top: 10%;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-info p {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-center {
+    height: 70vh;
+  }
+  .about-center div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-title h3 {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  .about-info {
+    width: 70%;
+  }
+
+  .about-info p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-image {
+    display: block;
+    margin: 0 20% 0 auto;
+  }
+
+  .about-image-center {
+    height: 100%;
+  }
+
+  .about-photo {
+    max-width: 20rem;
+    max-height: 20rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: relative;
+  }
+}

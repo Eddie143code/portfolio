@@ -1,0 +1,21 @@
+@import url("./globals.css");
+
+.footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer ul {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer ul {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}

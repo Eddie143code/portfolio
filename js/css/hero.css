@@ -1,0 +1,47 @@
+.hero {
+}
+
+.hero-center {
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.hero-info {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+
+.hero-info > a {
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 50%;
+  padding: 1rem;
+  box-shadow: var(--dark-shadow);
+  border: 1px solid black;
+}
+
+.hero-info h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-icons {
+  margin: 0 auto;
+}
+
+.hero-img {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-info h4 {
+    font-size: 2rem;
+  }
+
+  .hero-info > a {
+    width: 30%;
+  }
+}

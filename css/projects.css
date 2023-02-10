@@ -1,14 +1,53 @@
 @import url("./globals.css");
 
 .project-center {
-  height: 70vh;
+  min-height: 70vh;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  background-image: linear-gradient(
+    to left,
+    var(--color-whi-1),
+    var(--color-ter-1)
+  );
+  margin-bottom: 5%;
+}
+
+.project-center div {
+}
+
+.project-center article {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .project-info {
   margin: auto auto;
+  width: 90vw;
+}
+
+.view-project-container {
+  margin-left: 8%;
+  text-align: center;
+}
+
+.view-project-container a {
+  font-weight: 550;
+  background: var(--color-qua-1);
+  box-shadow: var(--dark-shadow);
+  padding: 15px;
+}
+
+.view-project-container a:hover {
+  background: var(--color-ter-3);
+}
+
+.view-project-container a:active {
+  box-shadow: none;
+}
+
+.project-info div {
+  width: 50%;
 }
 
 .project-info p {
@@ -19,7 +58,7 @@
 }
 
 .project-title {
-  text-align: center;
+  margin: 0 auto;
 }
 
 .project-image {
@@ -43,7 +82,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .project-center {
+    min-height: 80vh;
+  }
   .project-info {
+    margin-top: 10%;
     width: 80%;
   }
 
@@ -53,6 +96,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .project-title {
+    margin: 0;
+    margin-left: 8%;
+  }
   .project-center div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,11 +109,20 @@
   }
 
   .project-photo {
-    margin-left: 50%;
+    margin-left: 60%;
   }
 
-  .project-title h3 {
-    width: 100%;
-    margin-left: 50%;
+  .view-project-container a {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project-info {
+    width: 70%;
+  }
+
+  .project-photo {
+    margin-left: 80%;
   }
 }

@@ -5,8 +5,9 @@
   display: grid;
   align-items: center;
   width: 99vw;
-  background: var(--background-color);
+  background: var(--color-whi-1);
   z-index: 2;
+  text-transform: capitalize;
 }
 
 .nav-center {
@@ -96,6 +97,8 @@
   /* add later */
   -webkit-transform: translateX(-101%);
   transform: translateX(-101%);
+  background: rgb(242, 242, 242);
+  z-index: 3;
 }
 /* toggle sidebar */
 .show-sidebar {
@@ -128,4 +131,10 @@
   font-size: 1.5rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  color: var(--color-pri-1);
+  border: none;
 }

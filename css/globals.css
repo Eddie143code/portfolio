@@ -1,15 +1,24 @@
 :root {
   /* primary color */
-  --color-pimary-1: rgb(26, 164, 255);
+  --color-pri-1: rgb(212, 48, 67);
 
   /* secondary color */
-  --color-secondary-1: rgba(255, 184, 48, 100%);
+  --color-sec-1: rgb(255, 250, 231);
 
   /* tertiary color */
-  --color-tertiary-1: rgba(253, 25, 56, 100%);
+  --color-ter-1: rgb(239, 239, 239);
+  --color-ter-3: rgb(242, 242, 242);
+  --color-ter-2: rgb(51, 44, 57);
 
-  /* background */
-  --background-color: #fff;
+  /*quaternary color*/
+  --color-qua-1: rgb(255, 222, 0);
+  --color-qua-2: rgb(255, 234, 32);
+
+  --color-quad-1: #ff8b13;
+  --color-quad-2: #fc7300;
+
+  /*white*/
+  --color-whi-1: #fff;
 
   /* font */
   --font-primary: "Roboto", sans-serif;
@@ -27,7 +36,7 @@
 }
 
 * {
-  /*border: 1px solid black; */
+  /*border: 1px solid black;*/
 }
 
 *,
@@ -50,8 +59,10 @@ ul {
   list-style-type: none;
 }
 a {
+  color: black;
   text-decoration: none;
 }
+
 a:visited {
   color: inherit;
 }
@@ -61,7 +72,6 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--font-primary);
@@ -72,6 +82,8 @@ h1 {
   font-size: 3rem;
 }
 h2 {
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 2rem;
 }
 h3 {
@@ -107,6 +119,11 @@ p {
   h4 {
     line-height: 1;
   }
+}
+
+section {
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 .btn {

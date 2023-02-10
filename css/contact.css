@@ -1,10 +1,10 @@
 @import url("./globals.css");
 
 .contact-center {
-  margin: 0 auto;
-  min-height: 60vh;
+  height: 50vh;
   display: grid;
   place-items: center;
+  margin-top: 0%;
 }
 
 .contact-info {
@@ -30,7 +30,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .contact-center {
+    height: 35vh;
+  }
+
   .contact-info {
-    width: 70vw;
+    width: 50vw;
   }
 }

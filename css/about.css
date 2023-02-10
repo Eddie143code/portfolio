@@ -1,10 +1,28 @@
 @import url("./globals.css");
 
 .about-center {
-  height: 70vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  margin-top: 0;
+  background-image: linear-gradient(
+    to right,
+    var(--color-whi-1),
+    var(--color-ter-1)
+  );
+}
+
+.about-span {
+  font-size: 1.4rem;
+}
+
+.about-span span {
+  font-size: 1.6rem;
+  color: var(--color-quad-1);
+}
+
+.about-center article {
 }
 
 .about-info {
@@ -13,7 +31,6 @@
 
 .about-info p {
   width: 90vw;
-  margin-top: 10%;
 }
 
 .about-title {
@@ -24,10 +41,37 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .about-span {
+    font-size: 1.6rem;
+  }
+
+  .about-span span {
+    font-size: 1.8rem;
+    color: var(--color-quad-1);
+  }
+
+  .about-info p {
+    width: 70vw;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  .about-span {
+    font-size: 1.5rem;
+  }
+
+  .about-span span {
+    font-size: 1.8rem;
+    color: var(--color-quad-1);
+  }
+
+  .about-center {
+    height: 70vh;
+  }
   .about-center div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
   }
 
   .about-title h3 {
@@ -36,18 +80,20 @@
   }
 
   .about-info {
+    grid-column: 1 / span 1.5;
     width: 70%;
   }
 
   .about-info p {
     width: 70%;
-    margin-left: auto;
+    margin-left: 30%;
     margin-right: auto;
   }
 
   .about-image {
+    margin: 0 auto;
     display: block;
-    margin: auto auto;
+    grid-column: 3 / span 1;
   }
 
   .about-image-center {
@@ -55,10 +101,23 @@
   }
 
   .about-photo {
+    min-width: none;
+    min-height: none;
     max-width: 20rem;
     max-height: 20rem;
     -o-object-fit: cover;
     object-fit: cover;
     position: relative;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-span {
+    font-size: 2.5rem;
+  }
+
+  .about-span span {
+    font-size: 3rem;
+    color: var(--color-quad-1);
   }
 }

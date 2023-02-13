@@ -1,0 +1,142 @@
+@import url("./globals.css");
+
+#nav {
+  height: 5rem;
+  display: grid;
+  align-items: center;
+  width: 99vw;
+  background: var(--color-whi-1);
+  z-index: 2;
+  text-transform: capitalize;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-name {
+  grid-column: 1/3;
+  font-size: 1.8rem;
+}
+
+.nav-btn-container {
+  display: block;
+  grid-column: 3;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  background: none;
+}
+
+.bars-bigger {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header button {
+  grid-column: span 1;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .nav-header div {
+    grid-column: span 2;
+    font-size: 1.8rem;
+  }
+
+  .nav-header button {
+    display: none;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .nav-links a {
+    grid-column: auto;
+  }
+}
+
+.navbar-fixed {
+  position: fixed;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: grid;
+  /* align-items: center;
+    justify-content: center; */
+  place-items: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  /* add later */
+  -webkit-transform: translateX(-101%);
+  transform: translateX(-101%);
+  background: rgb(242, 242, 242);
+  z-index: 3;
+}
+/* toggle sidebar */
+.show-sidebar {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.sidebar-links {
+  text-align: center;
+}
+.sidebar-links a {
+  font-size: 2rem;
+  text-transform: capitalize;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.sidebar-links a:hover {
+}
+.social-icons {
+  display: grid;
+  margin-top: 3rem;
+  width: 20rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+.social-icon {
+  font-size: 1.5rem;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  color: var(--color-pri-1);
+  border: none;
+}

@@ -26,7 +26,7 @@
 }
 
 .about-info {
-  margin: auto auto;
+  margin: 0 auto;
 }
 
 .about-info p {
@@ -71,53 +71,43 @@
   }
   .about-center div {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
-  }
-
-  .about-title h3 {
-    margin-left: 50%;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
   }
 
   .about-info {
-    grid-column: 1 / span 1.5;
-    width: 70%;
+    margin: 0 auto;
+    width: 30vw;
   }
 
   .about-info p {
-    width: 70%;
-    margin-left: 30%;
-    margin-right: auto;
+    display: block;
+    width: 80%;
   }
 
   .about-image {
-    margin: 0 auto;
     display: block;
-    grid-column: 3 / span 1;
+    width: 45vw;
   }
 
   .about-image-center {
-    height: 100%;
+    margin: 0 auto;
+    max-width: 24rem;
+    max-height: 24rem;
   }
 
   .about-photo {
-    min-width: none;
-    min-height: none;
-    max-width: 20rem;
-    max-height: 20rem;
-    -o-object-fit: cover;
-    object-fit: cover;
-    position: relative;
+    max-width: 24rem;
+    max-height: 24rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about-span {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .about-span span {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: var(--color-quad-1);
   }
 }

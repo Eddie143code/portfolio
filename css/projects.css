@@ -13,25 +13,36 @@
   margin-bottom: 5%;
 }
 
-.project-center div {
-}
-
 .project-center article {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
 .project-info {
-  margin: auto auto;
+  margin: 0 auto;
   width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project-info p {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .view-project-container {
-  margin-left: 8%;
-  text-align: center;
+  margin: 0 auto;
+  height: 10vh;
+  width: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .view-project-container a {
+  text-align: center;
   font-weight: 550;
   background: var(--color-qua-1);
   box-shadow: var(--dark-shadow);
@@ -46,35 +57,25 @@
   box-shadow: none;
 }
 
-.project-info div {
-  width: 50%;
-}
-
-.project-info p {
-  margin-top: 5%;
-  margin-bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .project-title {
   margin: 0 auto;
 }
 
 .project-image {
   margin: 0 auto;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
 
 .project-image-center {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .project-photo {
-  max-width: 20rem;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 18rem;
   max-height: 20rem;
   -o-object-fit: cover;
   object-fit: cover;
@@ -96,10 +97,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .project-title {
-    margin: 0;
-    margin-left: 8%;
-  }
   .project-center div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,8 +105,26 @@
     width: 70%;
   }
 
+  .project-title {
+    width: min-content;
+  }
+
+  .project-image {
+    width: 45vw;
+  }
+
+  .project-image-center {
+    max-width: 24rem;
+    max-height: 24rem;
+  }
+
   .project-photo {
-    margin-left: 60%;
+    max-width: 24rem;
+    max-height: 24rem;
+  }
+
+  .view-project-container {
+    width: 150px;
   }
 
   .view-project-container a {
@@ -118,11 +133,4 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .project-info {
-    width: 70%;
-  }
-
-  .project-photo {
-    margin-left: 80%;
-  }
 }

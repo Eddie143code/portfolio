@@ -71,11 +71,15 @@
 
   .nav-links {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto auto;
   }
 
   .nav-links a {
     grid-column: auto;
+  }
+
+  .nav-links li {
+    width: fit-content;
   }
 }
 

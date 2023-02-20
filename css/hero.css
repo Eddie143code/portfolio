@@ -1,5 +1,7 @@
+@import url("./globals.css");
+
 .hero {
-  background: #fff;
+  background: var(--color-whi-1);
 }
 
 .hero-center {
@@ -21,10 +23,22 @@
   width: 50%;
   padding: 1rem;
   box-shadow: var(--dark-shadow);
-  border: 1px solid black;
   background: var(--color-pri-1);
   color: var(--color-whi-1);
   font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+
+.hero-info > a:hover {
+  transform: scale(1.1);
+}
+
+.hero-info > a:active {
+  box-shadow: none;
+}
+
+.hero-info > a:visited {
+  color: var(--color-whi-1);
 }
 
 .hero-info h4 {

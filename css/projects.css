@@ -42,15 +42,17 @@
 }
 
 .view-project-container a {
+  display: inline-block;
   text-align: center;
   font-weight: 550;
   background: var(--color-qua-1);
   box-shadow: var(--dark-shadow);
-  padding: 15px;
+  padding: 20px;
+  transition: all 0.25s;
 }
 
 .view-project-container a:hover {
-  background: var(--color-ter-3);
+  transform: scale(1.1);
 }
 
 .view-project-container a:active {

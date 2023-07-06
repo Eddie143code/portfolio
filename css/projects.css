@@ -99,6 +99,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .div-100 {
+    width: 100%;
+  }
+  
+
   .project-center div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,4 +140,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .cc-title {
+    width: 480px;
+  }
 }

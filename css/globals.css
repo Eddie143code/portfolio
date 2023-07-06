@@ -163,3 +163,9 @@ section {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+
+
+*{
+  border: 1px solid black;
+}
+
